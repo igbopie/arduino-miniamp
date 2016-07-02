@@ -1,22 +1,13 @@
 #include <IRremote.h>
 #include <IRremoteInt.h>
 
-/*
-  AnalogReadSerial
-  Reads an analog input on pin 0, prints the result to the serial monitor.
-  Graphical representation is available using serial plotter (Tools > Serial Plotter menu)
-  Attach the center pin of a potentiometer to pin A0, and the outside pins to +5V and ground.
-
-  This example code is in the public domain.
-*/
+// Install library https://github.com/z3t0/Arduino-IRremote
 const int LED_PIN = 4;
 const int IR_PIN = 2;
 const int BTN_PIN = 3;
 
 const int MODE_NORMAL = 0;
 const int MODE_LEARN_UP = 1;
-
-// variables will change:
 int buttonState = 0; 
 int mode = 0;
 
