@@ -105,7 +105,7 @@ void processRelays() {
   if (spdifStatus == SPDIF_STATUS_ON) {
     digitalWrite(PIN_RELAYS, LOW);
   } else {
-    digitalWrite(PIN_RELAYS, HIGH);
+    digitalWrite(PIN_RELAYS, HIGH );
   }
 }
 
